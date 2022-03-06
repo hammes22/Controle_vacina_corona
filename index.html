@@ -8,25 +8,12 @@
     <title>Cadastro vacinação</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="style/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
 
-    <style>
-        .radio-group {
-
-            padding: 20px;
-
-
-
-            padding: 30px;
-
-            margin-bottom: 15px;
-
-            border-radius: 5px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 
 <body cz-shortcut-listen="true">
@@ -171,14 +158,14 @@
                     <label for="tipo_sangue" class="form-label">Tipo sanguíneo :</label>
                     <select class="form-select" id="tipo_sangue" required>
                         <option selected disabled value="">Escolha o tipo sanguíneo</option>
-                        <option>A</option>
-                        <option>B</option>
-                        <option>AB</option>
-                        <option>O</option>
-                        <option>-A</option>
-                        <option>-B</option>
-                        <option>-AB</option>
-                        <option>-O</option>
+                        <option>A+</option>
+                        <option>B+</option>
+                        <option>AB+</option>
+                        <option>O+</option>
+                        <option>A-</option>
+                        <option>B-</option>
+                        <option>AB-</option>
+                        <option>O-</option>
                     </select>
                     <div class="invalid-feedback">
                         Selecione um o tipo sanguíneo valido
@@ -231,12 +218,12 @@
 
                 <div class="form-check">
                     <input type="radio" class="form-check-input" id="Segunda_dose_radio_1" name="Segunda_dose_radio"
-                    onchange="disable(['terceira_dose_radio'], true)" required>
+                        onchange="disable(['terceira_dose_radio'], true)" required>
                     <label class="form-check-label" for="Segunda_dose_radio_1">Não tomei a segunda dose</label>
                 </div>
                 <div class="form-check">
                     <input type="radio" class="form-check-input" id="Segunda_dose_radio_2" name="Segunda_dose_radio"
-                    onchange="disable(['terceira_dose_radio'], false)" required>
+                        onchange="disable(['terceira_dose_radio'], false)" required>
                     <label class="form-check-label" for="Segunda_dose_radio_2">CoronaVac</label>
                 </div>
                 <div class="form-check">
@@ -341,18 +328,21 @@
     </footer>
 
 
-    <script src="http://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="http://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script> -->
+    <script src="js/vanilla-masker.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> -->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+    <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/javascrypt.js"></script>
 
     <script>
-  
+
     </script>
 
 
